@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-project
+  description: A sample Node.js service with Swagger API documentation
+  tags:
+    - nodejs
+    - api
+    - swagger
+  annotations:
+    github.com/project-slug: SunLight67-hub/backstage-project
+spec:
+  type: service
+  lifecycle: production
+  owner: SunLight67-hub
+  system: backstage-project
