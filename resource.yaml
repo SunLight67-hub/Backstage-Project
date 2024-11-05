@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: backstage-project
+  description: PostgreSQL database for My Node.js Service
+  tags:
+    - postgres
+    - database
+spec:
+  type: database
+  lifecycle: production
+  owner: SunLight67-hub
+  system: backstage-project
+  parameters:
+    databaseType: postgres
+    connectionString: "postgresql://username:password@host:port/database"  # Replace with actual connection string or reference
