@@ -1,0 +1,157 @@
+swagger: '2.0'
+info:
+  version: '0.0.1'
+  title: USER DETAILS
+# during dev, should point to your local machine
+#host: localhost:3000
+basePath: /user-details
+# basePath prefixes all resource
+# schemes:
+#   # tip: remove http to make production-grade
+#   - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+
+paths:
+  /v1/health-check:
+    get:
+      tags:
+        - 'Health check'
+      summary: 'Health check'
+      description: 'Health check'
+      operationId: 'getHealthCheck'
+      produces:
+        - 'application/xml'
+        - 'application/json'
+      responses:
+        default:
+          description: 'successfully fetched'
+      x-swagger-router-controller: 'health-check.controller'
+
+  /v1/userDetails:
+    get:
+      tags:
+        - 'USER DETAILS'
+      summary: 'user details'
+      description: 'To get user details'
+      operationId: 'getUserDetails'
+      produces:
+        - 'application/xml'
+        - 'application/json'
+      parameters:
+        - name: "userId"
+          in: "query"
+          required: true          
+          description: 'Get username based on id'
+          type: "integer"
+          required: false         
+      responses:
+        default:
+          description: 'successfully fetched'
+      x-swagger-router-controller: 'user-details.controller'
+  
+    post:
+      tags:
+        - 'USER DETAILS'
+      summary: 'insert user details'
+      description: 'To insert user details'
+      operationId: 'addUserDetails'
+      produces:
+        - 'application/xml'
+        - 'application/json'
+      parameters:
+        - in: 'body'
+          name: 'body'         
+          description: 'Name of the user to be added'
+          required: true          
+          schema:
+            $ref: '#/definitions/addUserData'
+      responses:
+        default:
+          description: 'User successfully added'
+      x-swagger-router-controller: 'user-details.controller'
+
+    put:
+      tags:
+        - 'USER DETAILS'
+      summary: 'update user details'
+      description: 'To update user details'
+      operationId: 'updateUserDetails'
+      produces:
+        - 'application/xml'
+        - 'application/json'
+      parameters:
+        - in: 'body'
+          name: 'body'         
+          description: 'update user name'
+          required: true          
+          schema:
+            $ref: '#/definitions/updateUserData'
+      responses:
+        default:
+          description: 'username updated!'
+      x-swagger-router-controller: 'user-details.controller'
+
+    delete:
+      tags:
+        - 'USER DETAILS'
+      summary: 'Delete user details'
+      description: 'Deletes user details based on the provided user ID.'
+      operationId: 'deleteUserDetails'
+      produces:
+        - 'application/json'
+        - 'application/xml'
+      parameters:
+        - name: "userId"
+          in: "query"
+          required: true          
+          description: 'Get username based on id'
+          type: "integer"
+          required: false         
+      responses:
+        default:
+          description: 'successfully deleted'
+      x-swagger-router-controller: 'user-details.controller'
+
+definitions:
+  addUserData:
+    type: "object"
+    required:
+      - userName
+    properties:
+      userName:
+        type: string
+        example: "John Doe"
+  updateUserData:
+    type: "object"
+    required:
+      - userName
+      - userId
+    properties:
+      userId:
+        type: integer
+        example: 1
+      userName:
+        type: string
+        example: "John Doe"  
+
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+    xml:
+      name: 'loginUser'
+    example:
+      userId: 'admin@mail.com'
+      password: 'password'
+      role: 'admin'
+
+
+
+
