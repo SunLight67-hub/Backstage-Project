@@ -10,7 +10,6 @@ metadata:
   annotations:
     github.com/project-slug: SunLight67-hub/backstage-project
     backstage.io/techdocs-ref: dir:.
-    backstage.io/depends-on: 'component:backstage-project'
 spec:
   type: service
   lifecycle: production
