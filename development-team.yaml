@@ -4,6 +4,8 @@ kind: Group
 metadata:
   name: development
   description: The Development software team
+  annotations:
+    backstage.io/partOf: backstage-project
 spec:
   type: team
   system: Backstage-Project
