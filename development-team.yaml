@@ -1,0 +1,20 @@
+# Development Team Group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: development
+  description: The Development software team
+spec:
+  type: team
+  profile:
+    displayName: Development Team
+    email: development@example.com
+    picture: https://example.com/groups/development-team.jpeg
+  parent: software
+  children:
+    - frontend
+    - backend
+  members:
+    - rkumar
+    - lwong
+    - tsingh
