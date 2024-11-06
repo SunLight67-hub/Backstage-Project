@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: sunlight67-hub
-  description: Sunlight Hub team responsible for Backstage project
+  description: Sunlight Hub is responsible for Backstage project
 spec:
   type: team
   children: software
