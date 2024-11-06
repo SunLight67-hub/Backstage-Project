@@ -5,6 +5,5 @@ metadata:
   description: The parent group for all software-related teams
 spec:
   type: department  # Adjust type if needed
-  parent: software
   children:
     - development
