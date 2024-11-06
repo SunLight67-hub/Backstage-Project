@@ -17,5 +17,3 @@ spec:
   system: Backstage-Project
   providesApis:
     - backstage-project-api  # Links to the API this component provides
-  hasPart:
-    - development
