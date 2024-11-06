@@ -9,6 +9,7 @@ metadata:
 spec:
   type: team
   system: Backstage-Project
+  owner: SunLight67-hub
   profile:
     displayName: Development Team
     email: development@example.com
@@ -18,4 +19,4 @@ spec:
     - frontend
     - backend
   members:
-    - guests
+    - SunLight67-hub
