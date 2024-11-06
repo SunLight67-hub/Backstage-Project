@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: backstage-project
+  name: backstage-project-api
   description: API documentation for My Node.js Service
   annotations:
     backstage.io/depends-on: 'component:backstage-project'
@@ -9,6 +9,6 @@ spec:
   type: openapi
   lifecycle: production
   owner: SunLight67-hub
-  system: backstage-project
+  system: Backstage-Project
   definition:
     $text: 'https://gist.githubusercontent.com/lenage/08964335de9064540c8c335fb849c5da/raw/6d63e3546897356882ed7e30cd48891a24e2b354/feature.swagger.json'
