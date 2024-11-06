@@ -6,6 +6,7 @@ metadata:
   description: The Development software team
 spec:
   type: team
+  system: Backstage-Project
   profile:
     displayName: Development Team
     email: development@example.com
