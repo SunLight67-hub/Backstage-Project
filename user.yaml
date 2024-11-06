@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: SunLight67-hub
+  description: User representing Sunlight hub
+spec:
+  profile:
+    displayName: SunLight hub
+    email: sunlight67sun@gmail.com # Replace with the actual email
+  memberOf:
+    - development  # Or any group(s) this user should belong to
