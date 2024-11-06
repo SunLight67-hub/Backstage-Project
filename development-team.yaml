@@ -15,6 +15,6 @@ spec:
     email: development@example.com
     picture: https://example.com/groups/development-team.jpeg
   parent: software
-  children:[]
+  children: []
   members:
     - SunLight67-hub
