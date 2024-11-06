@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: software
+  description: The parent group for all software-related teams
+spec:
+  type: department  # Adjust type if needed
+  children:
+    - development
