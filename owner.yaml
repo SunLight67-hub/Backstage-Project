@@ -5,6 +5,6 @@ metadata:
   description: Sunlight Hub is responsible for Backstage project
 spec:
   type: team
-  children: 
-   - software
+  children:
+    - software
 
