@@ -14,4 +14,6 @@ spec:
   type: service
   lifecycle: production
   owner: SunLight67-hub
-  system: backstage-project
+  system: Backstage-Project
+  providesApis:
+    - backstage-project-api  # Links to the API this component provides
