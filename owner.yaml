@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: sunlight-hub
+  description: The team responsible for managing the Backstage project
+spec:
+  type: team
+  children: [] 
