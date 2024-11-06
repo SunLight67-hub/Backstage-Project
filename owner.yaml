@@ -4,6 +4,6 @@ metadata:
   name: sunlight67-hub
   description: Sunlight Hub team responsible for Backstage project
 spec:
-  type: team
-  children: [] 
+  type: software
+  children: software
 
