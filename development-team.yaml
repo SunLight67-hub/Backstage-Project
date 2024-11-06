@@ -18,6 +18,4 @@ spec:
     - frontend
     - backend
   members:
-    - rkumar
-    - lwong
-    - tsingh
+    - guests
