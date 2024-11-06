@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: Backstahe-Project
+  name: Backstage-Project
   description: System grouping for services related to Backstage Project
 spec:
   owner: group:default/sunlight67-hub
