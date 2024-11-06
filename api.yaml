@@ -3,6 +3,8 @@ kind: API
 metadata:
   name: backstage-project
   description: API documentation for My Node.js Service
+  annotations:
+    backstage.io/depends-on: 'component:backstage-project'
 spec:
   type: openapi
   lifecycle: production
