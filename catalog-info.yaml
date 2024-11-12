@@ -15,5 +15,6 @@ spec:
   lifecycle: production
   owner: SunLight67-hub
   system: Backstage-Project
+  doc_links: https://docs.google.com/document/d/1thDOiqztvot7YzGUTe4p4M7qdlA0BQp14w3acstKyY8/edit?tab=t.0
   providesApis:
     - backstage-project-api  # Links to the API this component provides
