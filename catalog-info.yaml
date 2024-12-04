@@ -10,6 +10,12 @@ metadata:
   annotations:
     github.com/project-slug: SunLight67-hub/backstage-project
     backstage.io/techdocs-ref: dir:.
+    jira.com/project-key: SCRUM # The key of the Jira project to track for this entity
+    jira.com/instance: https://sunlight67sun.atlassian.net # Optional: Jira instance URL for disambiguation
+    jira.com/components: component1,component2,component3 # Jira component names separated by commas
+    jira.com/filter-ids: 1 # Jira filter ID(s) separated by commas
+    jira.com/incoming-issues-status: Incoming # Status for filtering incoming issues
+
 spec:
   type: service
   lifecycle: production
